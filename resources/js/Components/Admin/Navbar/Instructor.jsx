@@ -6,11 +6,12 @@ export default function Instructor(){
             <a href="#" className="nav-label" onClick={navbarClick}>Instructor</a>
             <ul className="nav nav-sidebar">
                 <li className="nav-item">
-                    <a href="#" className="nav-link has-sub" onClick={subMenu}><i className="ri-pencil-ruler-2-line"></i> <span>Getting Started</span></a>
+                    <a href={route('admin.basic-profile.show')} className="nav-link"><i className="ri-user-line"></i> <span>Profile</span></a>
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link has-sub" onClick={subMenu}><i className="ri-user-line"></i> <span>Profile</span></a>
                     <nav className="nav nav-sub">
-                        <a href="../docs/layout-grid.html" className="nav-sub-link">Grid System</a>
-                        <a href="../docs/layout-columns.html" className="nav-sub-link">Columns</a>
-                        <a href="../docs/layout-gutters.html" className="nav-sub-link">Gutters</a>
+                        <a href={route('admin.basic-profile.show')} className="nav-sub-link">Basic Profile</a>
                     </nav>
                 </li>
             </ul>
