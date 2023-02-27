@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSocialProfileRequest;
 use App\Http\Requests\UpdateSocialProfileRequest;
 use App\Models\SocialProfile;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class SocialProfileController extends Controller
 {
@@ -36,7 +38,15 @@ class SocialProfileController extends Controller
      */
     public function store(StoreSocialProfileRequest $request)
     {
-        //
+        $basic = Auth::user()->education;
+        if($basic == null){
+            $basic = new SocialProfile;
+            $basic->user_id = Auth::user()->id;
+        }
+        $basic->fill($request->validated());
+        $basic->save();
+
+        return Redirect::route('admin.basic-profile.show');
     }
 
     /**

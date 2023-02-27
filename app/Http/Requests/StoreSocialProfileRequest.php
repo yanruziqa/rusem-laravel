@@ -13,7 +13,7 @@ class StoreSocialProfileRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class StoreSocialProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'gelar_depan' => 'required',
+            'gelar_belakang' => 'required',
+            'lulusan' => 'required'
         ];
     }
 }

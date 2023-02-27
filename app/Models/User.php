@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use App\Models\BasicProfile;
+use App\Models\SocialProfile;
 
 class User extends Authenticatable
 {
@@ -47,5 +48,10 @@ class User extends Authenticatable
     public function basic(): HasOne
     {
         return $this->hasOne(BasicProfile::class);
+    }
+
+    public function education(): HasOne
+    {
+        return $this->hasOne(SocialProfile::class);
     }
 }

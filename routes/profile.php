@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BasicProfileController;
+use App\Http\Controllers\SocialProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -19,4 +20,5 @@ use Inertia\Inertia;
 Route::middleware('auth')->group(function () {
     Route::get('/basic-profile', [BasicProfileController::class, 'show'])->name('admin.basic-profile.show');
     Route::post('/basic-profile/save', [BasicProfileController::class, 'store'])->name('admin.basic-profile.save');
+    Route::post('/education-profile/save', [SocialProfileController::class, 'store'])->name('admin.social-profile.save');
 });

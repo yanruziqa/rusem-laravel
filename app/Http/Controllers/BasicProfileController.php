@@ -60,9 +60,11 @@ class BasicProfileController extends Controller
     public function show(BasicProfile $basicProfile)
     {
         $basic = Auth::user()->basic;
+        $education = Auth::user()->education;
 
         return Inertia::render('Profiles/Basic', [
-            'basicProfile' => $basic
+            'basicProfile' => $basic,
+            'educationProfile' => $education
         ]);
     }
 
