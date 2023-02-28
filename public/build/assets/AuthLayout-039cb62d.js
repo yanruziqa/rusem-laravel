@@ -1,0 +1,1 @@
+import{j as c,a}from"./app-c591b27c.js";function r({children:s}){return c("div",{className:"row g-0",children:[a("div",{className:"col-md-7 col-lg-5 col-xl-4 col-wrapper",children:a("div",{className:"card card-sign",children:s})}),a("div",{className:"col d-none d-lg-block",children:a("img",{src:"/assets/img/bg1.jpg",className:"auth-img",alt:""})})]})}export{r as A};

@@ -1,0 +1,1 @@
+import{a,n as t}from"./app-c591b27c.js";import{A as e}from"./AuthenticatedLayout-85ae3c42.js";function n(r){return a(e,{auth:r.auth,errors:r.errors,children:a(t,{title:"Dashboard"})})}export{n as default};

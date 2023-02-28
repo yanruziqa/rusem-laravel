@@ -1,0 +1,1 @@
+import{a}from"./app-c591b27c.js";function r({children:e}){return a("div",{className:"page-banner",children:a("div",{className:"page-banner__wrapper",children:a("div",{className:"container",children:e})})})}export{r as default};

@@ -1,0 +1,1 @@
+import{a as n}from"./app-c591b27c.js";function b({type:a="submit",className:r="",processing:t,children:i,onClick:m}){return n("button",{type:a,onClick:m,className:`btn btn-primary ${t&&"opacity-25"} `+r,disabled:t,children:i})}export{b as P};

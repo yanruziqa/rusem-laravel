@@ -1,0 +1,1 @@
+import{j as r,a}from"./app-c591b27c.js";function d(e){return r("div",{className:"card-header",children:[a("a",{href:"/",className:"header-logo mb-5",children:"ruangseminar"}),a("h3",{className:"card-title",children:e.header}),a("p",{className:"card-text",children:"Selamat Datang!"})]})}export{d as default};

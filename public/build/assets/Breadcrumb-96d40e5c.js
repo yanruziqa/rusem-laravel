@@ -1,0 +1,1 @@
+import{a as r}from"./app-c591b27c.js";function n({location:c}){function m(e){return Object.keys(e.location).map(a=>r("li",{className:"breadcrumb-item",children:r("a",{href:e.location[a],children:a})}))}return r("div",{className:"page-breadcrumb",children:r("ul",{className:"breadcrumb",children:r(m,{location:c})})})}export{n as B};
