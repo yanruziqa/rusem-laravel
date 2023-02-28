@@ -25,8 +25,11 @@
         "perfect-scrollbar": "^1.5.5",
         "react-alert": "^7.0.3",
         "react-alert-template-oldschool-dark": "^1.0.1",
+        "react-data-table": "^0.1.0",
+        "react-data-table-component": "^7.5.3",
         "react-datepicker": "^4.10.0",
         "react-perfect-scrollbar": "^1.5.8",
+        "styled-components": "^5.3.6",
         "sweetalert2": "^11.7.2",
         "swiper": "^9.0.3"
     }

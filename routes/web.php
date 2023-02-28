@@ -32,6 +32,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('admin.dashboard');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/users', [ProfileController::class, 'list'])->name('admin.profile.list');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('admin.profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
